@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('PRINT') {
             steps {
-                sh 'echo $JOB_NAME'
+                sh 'echo i $JOB_NAME'
             }
         }
         stage('WRITE') {
