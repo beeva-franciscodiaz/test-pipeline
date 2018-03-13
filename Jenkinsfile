@@ -1,7 +1,5 @@
 pipeline {
-    agent {
-        'global'
-    }
+    agent any
     stages {
         stage('PRINT') {
             steps {
