@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('PRINT') {
             steps {
-                sh 'echo i $JOB_NAME'
+                sh 'echo $JOB_NAME'
             }
         }
         stage('WRITE') {
@@ -16,6 +16,7 @@ pipeline {
         stage('READ') {
             steps {
                 sh 'cat build_number'
+            }
         }
     }
 
